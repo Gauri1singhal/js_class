@@ -7,6 +7,13 @@ accountCity= "Jaipur"
 accountEmail= "aggarwalshweta.com"
 accountPass= "23456"
 accountCity= "Delhi"
-console.log(accountId)
+
+console.log(typeof(accountEmail)) //string
+
+console.log(accountId) //144553
 console.table([accountEmail, accountId, accountPass, accountCity])
 let accountState;
+
+console.log(accountState)
+accountState= 'Mumbai'
+console.log(accountState)
