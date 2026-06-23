@@ -3,10 +3,12 @@
 // code is executed
 // }
 
-//<,>,<=,>=,==,!=,===(checks the value and even the type of variable)
+//<,>,<=,>=,==(checks just the value),!=,===(checks the value and even the type of variable)
 // 2<=2 true
 // 3!=2 true
 // 2==="2" false
+
+//comparison operators- && || == !=
 
 // const balance=1000
 // if(balance<500){
@@ -18,6 +20,21 @@
 // else{
 //     console.log("balance>700")
 // }
+
+
+// const userLoggedIn=true
+// const debitCard=true
+// const loggedInFromGoogle= false
+// const loggedInFromEmail= true
+
+// if(userLoggedIn && debitCard){
+//     console.log("Allow to buys course")
+// }
+
+// if(loggedInFromEmail || loggedInFromGoogle){
+//     console.log("User logged in")
+// }
+
 
 //switch
 // switch (key) {
@@ -31,31 +48,31 @@
 
 // const month=3;
 // switch(month){
-//     case 1: console.log("1");
+//     case 1: console.log("January");
 //     break;
-//     case 2: console.log("2");
+//     case 2: console.log("february");
 //     break;
-//     case 3: console.log("3");
+//     case 3: console.log("march");
 //     break;
-//     case 4: console.log("4");
+//     case 4: console.log("april");
 //     break;
-//     case 5: console.log("5");
+//     case 5: console.log("may");
 //     break;
-//     case 6: console.log("6");
+//     case 6: console.log("june");
 //     break;
-//     case 7: console.log("7");
+//     case 7: console.log("july");
 //     break;
-//     case 8: console.log("8");
+//     case 8: console.log("august");
 //     break;
-//     case 9: console.log("9");
+//     case 9: console.log("september");
 //     break;
-//     case 10: console.log("10");
+//     case 10: console.log("october");
 //     break;
-//     case 11: console.log("11");
+//     case 11: console.log("november");
 //     break;
-//     case 12: console.log("12");
+//     case 12: console.log("december");
 //     break;
-//     default: console.log("not appropriate")
+//     default: console.log("not appropriate- out of bound")
 // }
 
 // const username="hitesh@gmail.com"
@@ -77,11 +94,12 @@
 //     console.log("Object is empty")
 // }
 
- //Nullish coalescing operator (??): null undefined
+ //Nullish coalescing operator (??): null and undefined
+ //this is a kind of fallback that in some case where a variable if gets not value from a method or function so it is defined as null or undefined
 
 //  let val1;
 //  val1= 5??10
-// val1= null??10
+// val1= null??10      //in place of 10 some funciton will be there
 //  val1= undefined?? 15
 // val1= null?? 10?? 20
 //  console.log(val1)
