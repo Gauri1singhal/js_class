@@ -22,26 +22,34 @@ const coding= ['js', 'php', 'java', 'cpp', 'python', 'react']
 // })
 
 
-const myCoding=[
-    {
-        languageName: 'javascript',
-        languagefileName: 'js'
-    },
-    {
-        languageName: 'javascript',
-        languagefileName: 'js'
-    },
-    {
-        languageName: 'python',
-        languagefileName: 'py'
-    },
-    {
-        languageName: 'java',
-        languagefileName: 'java'
-    }
-]
+// const myCoding=[
+//     {
+//         languageName: 'javascript',
+//         languagefileName: 'js'
+//     },
+//     {
+//         languageName: 'javascript',
+//         languagefileName: 'js'
+//     },
+//     {
+//         languageName: 'python',
+//         languagefileName: 'py'
+//     },
+//     {
+//         languageName: 'java',
+//         languagefileName: 'java'
+//     }
+// ]
 
-myCoding.forEach( (item)=>{
-    console.log(item.languageName)
-})
+// myCoding.forEach( (item)=>{
+//     console.log(item.languageName)
+// })
+
+
+// const values=  myCoding.forEach( (item)=>{
+//     //  console.log(item.languageName)
+//     return item
+//  })
+
+//  console.log(values)
 
