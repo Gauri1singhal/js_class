@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove elements in DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName){
+        const li= document.createElement('li')
+        li.innerHTML= `${langName}`
+        document.querySelector('.lang').appendChild(li)
+    }
+    addLang('Python')
+    addLang('Java')
+    //in this function, the tree is traversal to the end everytime a new child has
+    //  to be inserted which is not an optimized solution as the right now the list 
+    // had only 1 element but it can also have 1000 or lakhs or list items
+
+    function addLangOptimized(langName){
+        const li= document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.lang').appendChild(li)
+    }
+    //here entire tree is not traversed so this is the recommended approach
+    addLangOptimized('golang')
+
+
+    //editing the value
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //secondLang.innerHTML= 'Mojo'   //works but not optimized
+    const newLi= document.createElement('li')
+    newLi.textContent= "Mojo"
+    secondLang.replaceWith(newLi)    //optimized
+
+    //edit the 1st js with typescript with another approach 
+    const firstLang= document.querySelector('li:first-child')
+    firstLang.outerHTML= '<li>Typescript</li>'
+
+    //delete an element
+    const lastLang= document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
